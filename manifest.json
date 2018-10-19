@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "progressive-blur",
+  "description": "everythings so blurrry",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "run_at": "document_start",
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "amazon-font-logo-16.png",
+    "48": "amazon-font-logo-48.png",
+    "128": "amazon-font-logo-128.png"
+  }
+}
